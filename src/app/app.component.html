@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>SQL Query Tester</h1>
+  <textarea
+    [(ngModel)]="query"
+    placeholder="Enter your SQL query here"
+    rows="5"
+    cols="50"
+  ></textarea>
+  <br />
+
+  <button (click)="runQuery()">Run Query</button>
+
+  <h2>Results</h2>
+  <pre>{{ results }}</pre>
+</div>
